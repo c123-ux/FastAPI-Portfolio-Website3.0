@@ -78,7 +78,7 @@ class Settings(BaseSettings):
         return "postgresql" in self.DATABASE_URL
 
     model_config = ConfigDict(
-        env_file=".env",
+        env_file="../.env",
         env_file_encoding="utf-8",
     )
 
