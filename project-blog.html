@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客系统 - 项目详情 | 我的作品集</title>
+    <link rel="stylesheet" href="project-detail.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo" onclick="window.location.href='index.html#projects'">我的作品集</div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">首页</a></li>
+                <li><a href="index.html#about">关于我</a></li>
+                <li><a href="index.html#skills">技能</a></li>
+                <li><a href="index.html#projects">项目</a></li>
+                <li><a href="index.html#contact">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主内容 -->
+    <main class="main-content">
+        <!-- 项目概述 -->
+        <section class="project-overview">
+            <div class="container">
+                <div class="overview-content">
+                    <h1 class="project-title">📝 博客系统</h1>
+                    <p class="project-subtitle">现代化个人博客平台 - 支持文章发布、评论互动、标签分类和全文搜索</p>
+                    
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <span class="meta-icon">📅</span>
+                            <span>2025年2月 - 2025年7月</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-icon">👤</span>
+                            <span>全栈开发者</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-icon"></span>
+                            <span>线上演示版</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-icon"></span>
+                            <span>开源项目</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- 项目展示 -->
+            <section class="section">
+                <h2 class="section-title">项目展示</h2>
+                <div class="screenshot-grid">
+                    <div class="screenshot-card">
+                        <div class="screenshot-image">
+                            <span style="font-size: 5rem;">📰</span>
+                        </div>
+                        <div class="screenshot-info">
+                            <h4>文章列表页</h4>
+                            <p>卡片式布局，支持分页和筛选</p>
+                        </div>
+                    </div>
+                    <div class="screenshot-card">
+                        <div class="screenshot-image">
+                            <span style="font-size: 5rem;">📄</span>
+                        </div>
+                        <div class="screenshot-info">
+                            <h4>文章详情页</h4>
+                            <p>Markdown 渲染，代码高亮展示</p>
+                        </div>
+                    </div>
+                    <div class="screenshot-card">
+                        <div class="screenshot-image">
+                            <span style="font-size: 5rem;">💬</span>
+                        </div>
+                        <div class="screenshot-info">
+                            <h4>评论系统</h4>
+                            <p>嵌套评论，支持 @提及和回复</p>
+                        </div>
+                    </div>
+                    <div class="screenshot-card">
+                        <div class="screenshot-image">
+                            <span style="font-size: 5rem;">🔍</span>
+                        </div>
+                        <div class="screenshot-info">
+                            <h4>全文搜索</h4>
+                            <p>实时搜索结果，高亮匹配关键词</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 技术栈 -->
+            <section class="section">
+                <h2 class="section-title">技术栈详情</h2>
+                <div class="tech-stack-grid">
+                    <div class="tech-card">
+                        <h4>🎨 前端技术</h4>
+                        <ul>
+                            <li>Next.js 14 - React 框架</li>
+                            <li>App Router - 服务端渲染</li>
+                            <li>TypeScript - 类型安全</li>
+                            <li>Tailwind CSS - 样式框架</li>
+                            <li>Framer Motion - 动画库</li>
+                            <li>MDX - Markdown 扩展</li>
+                        </ul>
+                    </div>
+                    <div class="tech-card">
+                        <h4>⚙️ 后端技术</h4>
+                        <ul>
+                            <li>Next.js API Routes - 服务端 API</li>
+                            <li>Prisma - ORM 框架</li>
+                            <li>NextAuth.js - 身份认证</li>
+                            <li>Server Actions - 服务端操作</li>
+                            <li>缓存策略 - ISR 增量静态再生</li>
+                        </ul>
+                    </div>
+                    <div class="tech-card">
+                        <h4>🗄️ 数据库</h4>
+                        <ul>
+                            <li>PostgreSQL - 关系型数据库</li>
+                            <li>Prisma Schema - 数据建模</li>
+                            <li>全文搜索索引</li>
+                            <li>数据库迁移管理</li>
+                            <li>连接池优化</li>
+                        </ul>
+                    </div>
+                    <div class="tech-card">
+                        <h4> 内容处理</h4>
+                        <ul>
+                            <li>remark - Markdown 解析</li>
+                            <li>rehype - HTML 处理</li>
+                            <li>Syntax Highlighting - 代码高亮</li>
+                            <li>Image Optimization - 图片优化</li>
+                            <li>RSS Feed 生成</li>
+                            <li>Sitemap 自动生成</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 功能特性 -->
+            <section class="section">
+                <h2 class="section-title">核心功能</h2>
+                <div class="features-list">
+                    <div class="feature-item">
+                        <h4>📝 文章发布系统</h4>
+                        <p>现代化的内容创作体验</p>
+                        <ul>
+                            <li>Markdown 编辑器（支持实时预览）</li>
+                            <li>富文本格式支持（标题、列表、引用）</li>
+                            <li>代码块语法高亮（支持 100+ 语言）</li>
+                            <li>图片拖拽上传和嵌入</li>
+                            <li>草稿自动保存功能</li>
+                            <li>发布/定时发布/私密文章</li>
+                        </ul>
+                    </div>
+                    <div class="feature-item">
+                        <h4>💬 评论互动系统</h4>
+                        <p>增强用户互动体验</p>
+                        <ul>
+                            <li>嵌套评论（支持多级回复）</li>
+                            <li>@提及用户功能</li>
+                            <li>评论点赞和举报</li>
+                            <li>Markdown 格式评论</li>
+                            <li>评论通知系统</li>
+                            <li>评论审核管理</li>
+                        </ul>
+                    </div>
+                    <div class="feature-item">
+                        <h4>🏷️ 标签分类系统</h4>
+                        <p>灵活的内容组织方式</p>
+                        <ul>
+                            <li>多标签支持（每篇文章可打多个标签）</li>
+                            <li>标签云展示</li>
+                            <li>分类目录树</li>
+                            <li>标签筛选和组合查询</li>
+                            <li>热门文章排行</li>
+                            <li>相关文章推荐</li>
+                        </ul>
+                    </div>
+                    <div class="feature-item">
+                        <h4>🔍 全文搜索功能</h4>
+                        <p>快速精准的内容检索</p>
+                        <ul>
+                            <li>实时搜索建议</li>
+                            <li>搜索结果高亮显示</li>
+                            <li>按标题、内容、标签搜索</li>
+                            <li>搜索历史记录</li>
+                            <li>搜索结果分页</li>
+                            <li>高级搜索语法支持</li>
+                        </ul>
+                    </div>
+                    <div class="feature-item">
+                        <h4> 主题和样式</h4>
+                        <p>个性化的阅读体验</p>
+                        <ul>
+                            <li>多套主题模板</li>
+                            <li>暗黑/明亮模式切换</li>
+                            <li>自定义字体和字号</li>
+                            <li>阅读进度条</li>
+                            <li>目录导航（自动生成）</li>
+                            <li>回到顶部按钮</li>
+                        </ul>
+                    </div>
+                    <div class="feature-item">
+                        <h4> SEO 优化</h4>
+                        <p>提升搜索引擎排名</p>
+                        <ul>
+                            <li>语义化 HTML 结构</li>
+                            <li>动态 Meta 标签生成</li>
+                            <li>Open Graph 社交分享优化</li>
+                            <li>JSON-LD 结构化数据</li>
+                            <li>XML Sitemap 自动生成</li>
+                            <li>Robots.txt 配置</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 项目成果 -->
+            <section class="section">
+                <h2 class="section-title">项目成果</h2>
+                <div class="results-grid">
+                    <div class="result-card">
+                        <div class="result-number">30+</div>
+                        <div class="result-label">核心功能模块</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">12K+</div>
+                        <div class="result-label">代码行数</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">95+</div>
+                        <div class="result-label">Lighthouse 性能分数</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">1.2s</div>
+                        <div class="result-label">首屏加载时间</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">100+</div>
+                        <div class="result-label">文章模板</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">A+</div>
+                        <div class="result-label">SEO 评分</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 导航交互 -->
+            <div class="project-navigation">
+                <a href="project-data-visualization.html" class="nav-btn nav-btn-secondary">← 上一个项目</a>
+                <a href="index.html#projects" class="nav-btn nav-btn-secondary">返回作品列表</a>
+                <a href="index.html#contact" class="nav-btn"> 联系我</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 张三. 保留所有权利.</p>
+            <p>用 ❤️ 和代码构建</p>
+        </div>
+    </footer>
+
+    <script>
+        // 平滑滚动到锚点
+        document.querySelectorAll('a[href^="index.html#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                // 不阻止默认行为，让链接正常跳转
+            });
+        });
+    </script>
+</body>
+</html>

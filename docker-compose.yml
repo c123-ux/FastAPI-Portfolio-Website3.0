@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - SECRET_KEY=${SECRET_KEY:-change-me}
+      - ADMIN_USERNAME=${ADMIN_USERNAME:-admin}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-admin123}
+      - SENDER_EMAIL=${SENDER_EMAIL:-}
+      - SENDER_PASSWORD=${SENDER_PASSWORD:-}
+      - RECIPIENT_EMAIL=${RECIPIENT_EMAIL:-}
+    volumes:
+      - ./contacts.db:/app/contacts.db
+    restart: unless-stopped

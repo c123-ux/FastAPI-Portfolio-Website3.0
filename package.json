@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-backend",
+  "version": "2.0.0",
+  "description": "Portfolio Contact Form Backend with Advanced Features",
+  "main": "main_backend.py",
+  "scripts": {
+    "start": "uvicorn main_backend:app --host 0.0.0.0 --port $PORT",
+    "dev": "uvicorn main_backend:app --reload",
+    "build": "echo 'No build step required for Python'",
+    "deploy:railway": "railway up",
+    "deploy:heroku": "git push heroku main"
+  },
+  "keywords": [
+    "fastapi",
+    "portfolio",
+    "contact-form"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "python": ">=3.9"
+  }
+}
